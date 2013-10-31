@@ -1,6 +1,6 @@
 # cf-dedupe-list-aggregator
 
-Dedupe version of cf-list-aggregator
+Dedupe version of cf-dedupe-list-aggregator
 
 ## Installation
 
