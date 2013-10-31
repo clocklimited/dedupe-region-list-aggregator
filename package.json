@@ -8,7 +8,6 @@
     "type": "git",
     "url": "git@github.com:clocklimited/cf-dedupe-list-aggregator.git"
   },
-  "private": true,
   "publishConfig": {
     "registry": "http://npm.clockte.ch"
   },
