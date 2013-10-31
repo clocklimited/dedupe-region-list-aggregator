@@ -2,7 +2,7 @@
   "author": "Dom Harrington <dom.harrington@clock.co.uk>",
   "name": "cf-dedupe-list-aggregator",
   "description": "Dedupe version of cf-list-aggregator",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "tags": [],
   "repository": {
     "type": "git",
