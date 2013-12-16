@@ -1,8 +1,11 @@
 var MongoClient = require('mongodb').MongoClient
   , dbConnection
+  , mongoHost = process.env.NODE_MONGO_HOST || '127.0.0.1'
+  , mongoPort = process.env.NODE_MONGO_PORT || 27017
 
 module.exports.connect = function(done) {
-  MongoClient.connect('mongodb://127.0.0.1/cf-list-aggregator-tests', function (error, db) {
+  var mongoConnectionString = 'mongodb://' + mongoHost + ':' + mongoPort + '/cf-dedupe-list-aggregator-tests'
+  MongoClient.connect(mongoConnectionString, function (error, db) {
 
     dbConnection = db
 
