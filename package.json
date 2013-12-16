@@ -40,6 +40,7 @@
     "save-mongodb": "0.0.11",
     "jshint": "~2.3.0",
     "uber-cache": "~0.3.1",
-    "async": "~0.2.9"
+    "async": "~0.2.9",
+    "istanbul": "~0.1.46"
   }
 }
