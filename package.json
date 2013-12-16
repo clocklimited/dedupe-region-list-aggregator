@@ -13,9 +13,11 @@
   },
   "main": "./dedupe-list-aggregator.js",
   "scripts": {
-    "pretest": "./node_modules/.bin/pliers lint",
-    "test": "./node_modules/.bin/pliers test",
-    "posttest": "./node_modules/.bin/istanbul check-coverage --statements 99 --branches 99 _mocha -- -r should"
+    "lint": "./node_modules/.bin/pliers lint",
+    "pretest": "npm run-script lint",
+    "test": "./node_modules/.bin/istanbul cover ./node_modules/.bin/pliers test",
+    "posttest": "./node_modules/.bin/istanbul check-coverage && rm -rf coverage",
+    "prepublish": "npm test && npm prune"
   },
   "engines": {
     "node": ">=0.10"
