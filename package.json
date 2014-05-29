@@ -1,12 +1,12 @@
 {
   "author": "Dom Harrington <dom.harrington@clock.co.uk>",
-  "name": "cf-dedupe-list-aggregator",
-  "description": "Dedupe version of cf-list-aggregator",
-  "version": "0.0.3",
+  "name": "region-dedupe-list-aggregator",
+  "description": "Dedupe version of region-list-aggregator",
+  "version": "0.0.1",
   "tags": [],
   "repository": {
     "type": "git",
-    "url": "git@github.com:clocklimited/cf-dedupe-list-aggregator.git"
+    "url": "git@github.com:clocklimited/dedupe-region-list-aggregator.git"
   },
   "publishConfig": {
     "registry": "http://npm.clockte.ch"
@@ -24,7 +24,7 @@
   },
   "dependencies": {
     "lodash": "~2.2.1",
-    "cf-list-aggregator": "0.0.1"
+    "region-list-aggregator": "0.0.1"
   },
   "devDependencies": {
     "mocha": "~1",

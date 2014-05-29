@@ -1,5 +1,5 @@
 var _ = require('lodash')
-  , createNoDedupeListAggregator = require('cf-list-aggregator')
+  , createNoDedupeListAggregator = require('region-list-aggregator')
 
 _.extend(createAggregator, createNoDedupeListAggregator)
 
