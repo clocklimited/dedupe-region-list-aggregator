@@ -1,10 +1,10 @@
 # cf-dedupe-list-aggregator
 
-Dedupe version of cf-dedupe-list-aggregator
+Dedupe version of dedupe-region-list-aggregator
 
 ## Installation
 
-      npm install --save cf-dedupe-list-aggregator
+      npm install --save dedupe-region-list-aggregator
 
 ## Usage
 
