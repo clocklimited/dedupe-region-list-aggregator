@@ -1,4 +1,4 @@
-# cf-dedupe-list-aggregator
+# dedupe-region-list-aggregator
 
 Dedupe version of dedupe-region-list-aggregator
 
