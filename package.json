@@ -31,7 +31,7 @@
     "should": "~2",
     "pliers": "~0",
     "fleet-street": "git+ssh://git@github.com:clocklimited/fleet-street.git#a08627b4798fd77c5a2725c39cccb77d38a02427",
-    "service-locator": "*",
+    "service-locator": "0.0.2",
     "doorman": "0.0.2",
     "save": "0.0.19",
     "schemata": "0.0.7",
