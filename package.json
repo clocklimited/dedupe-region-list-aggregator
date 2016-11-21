@@ -9,14 +9,14 @@
     "url": "git@github.com:clocklimited/dedupe-region-list-aggregator.git"
   },
   "publishConfig": {
-    "registry": "http://npm.clockte.ch"
+    "registry": "https://registry.npmjs.org/"
   },
   "main": "./dedupe-list-aggregator.js",
   "scripts": {
-    "lint": "./node_modules/.bin/pliers lint",
+    "lint": "pliers lint",
     "pretest": "npm run-script lint",
-    "test": "./node_modules/.bin/istanbul cover ./node_modules/.bin/pliers test",
-    "posttest": "./node_modules/.bin/istanbul check-coverage && rm -rf coverage",
+    "test": "istanbul cover ./node_modules/.bin/pliers test",
+    "posttest": "istanbul check-coverage && rm -rf coverage",
     "prepublish": "npm test && npm prune"
   },
   "engines": {
