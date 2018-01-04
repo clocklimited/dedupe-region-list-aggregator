@@ -13,9 +13,9 @@
   },
   "main": "./dedupe-list-aggregator.js",
   "scripts": {
-    "lint": "pliers lint",
+    "lint": "jshint .",
     "pretest": "npm run-script lint",
-    "test": "istanbul cover ./node_modules/.bin/pliers test",
+    "test": "istanbul cover ./node_modules/.bin/_mocha -R spec -r should test",
     "posttest": "istanbul check-coverage && rm -rf coverage",
     "prepublish": "npm test && npm prune"
   },
@@ -29,7 +29,6 @@
   "devDependencies": {
     "mocha": "~1",
     "should": "~2",
-    "pliers": "~0",
     "fleet-street": "git+ssh://git@github.com:clocklimited/fleet-street.git#a08627b4798fd77c5a2725c39cccb77d38a02427",
     "service-locator": "0.0.2",
     "doorman": "0.0.2",
