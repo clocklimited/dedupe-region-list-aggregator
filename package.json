@@ -2,7 +2,7 @@
   "author": "Dom Harrington <dom.harrington@clock.co.uk>",
   "name": "dedupe-region-list-aggregator",
   "description": "Dedupe version of region-list-aggregator",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "tags": [],
   "repository": {
     "type": "git",
