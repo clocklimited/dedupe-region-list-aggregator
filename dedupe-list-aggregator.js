@@ -43,7 +43,7 @@ function createAggregator(listService, sectionService, articleService, options) 
           }
         })
       } else {
-        returnArticles = articles
+        returnArticles = articles.slice(0, limit)
       }
 
       cb(null, returnArticles)
