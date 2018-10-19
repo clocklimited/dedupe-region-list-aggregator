@@ -78,6 +78,45 @@ describe('Dedupe List Aggregator', function () {
       serviceLocator.articleService.deleteMany({}, done)
     })
 
+    it('should respect limit without dedupe', function (done) {
+
+      var articles = []
+        , listId
+
+      async.series(
+        [ publishedArticleMaker(articles)
+        , publishedArticleMaker(articles)
+        , publishedArticleMaker(articles)
+        , draftArticleMaker([])
+        , publishedArticleMaker(articles)
+        , publishedArticleMaker(articles)
+        , function (cb) {
+            serviceLocator.listService.create(
+              { type: 'auto'
+              , name: 'test list'
+              , order: 'recent'
+              , limit: 2
+              }
+              , function (err, res) {
+                  listId = res._id
+                  cb(null)
+                })
+          }
+        ], function (err) {
+          if (err) throw err
+
+          var aggregate = createAggregator(serviceLocator.listService, serviceLocator.sectionService,
+            serviceLocator.articleService, serviceLocator)
+
+          aggregate(listId, null, null, function (err, results) {
+            should.not.exist(err)
+            results.should.have.length(2)
+            done()
+          })
+
+        })
+    })
+
     it('should register article ids with a deduper if injected', function (done) {
 
       var articles = []
