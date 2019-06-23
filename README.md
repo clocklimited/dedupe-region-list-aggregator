@@ -1,5 +1,7 @@
 # dedupe-region-list-aggregator
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/clocklimited/dedupe-region-list-aggregator.svg)](https://greenkeeper.io/)
+
 Dedupe version of dedupe-region-list-aggregator
 
 ## Installation
