@@ -23,7 +23,7 @@
     "node": ">=0.10"
   },
   "dependencies": {
-    "lodash": "~2.2.1",
+    "lodash": "~4.17.19",
     "region-list-aggregator": "0.0.1"
   },
   "devDependencies": {
