@@ -24,7 +24,7 @@
   },
   "dependencies": {
     "lodash": "~2.2.1",
-    "region-list-aggregator": "0.0.1"
+    "region-list-aggregator": "0.1.0"
   },
   "devDependencies": {
     "mocha": "~1",
